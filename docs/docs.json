@@ -1,0 +1,66 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Documentación de Irma",
+  "theme": "mint",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0b808a",
+    "light": "#0b808a",
+    "dark": "#f47121"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Preguntas Frecuentes",
+        "groups": [
+          {
+            "group": "Sobre Irma y su Tecnología",
+            "pages": [
+              "index",
+              "tecnologia",
+              "para-quien-es"
+            ]
+          },
+          {
+            "group": "¿Qué se Puede Personalizar?",
+            "pages": [
+              "personalidad",
+              "limitar-foco",
+              "si-no-sabe"
+            ]
+          },
+          {
+            "group": "¿Cómo es el Proceso?",
+            "pages": [
+              "proceso",
+              "que-necesito-dar",
+              "soporte"
+            ]
+          },
+          {
+            "group": "Próximamente",
+            "pages": [
+              "integraciones",
+              "casos-de-exito"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Soporte",
+        "href": "mailto:soporte@holairma.com"
+      }
+    ]
+  },
+  "footer": {
+    "socials": {}
+  }
+}

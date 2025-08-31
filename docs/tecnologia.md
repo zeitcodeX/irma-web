@@ -1,0 +1,13 @@
+---
+title: '¿Qué tecnología usa Irma?'
+description: 'Conocé el motor de IA que impulsa a Irma y cómo lo adaptamos para tu negocio.'
+---
+
+Irma está construida sobre **Gemini**, el avanzado modelo de lenguaje de Google. Esto le otorga una capacidad excepcional para entender el contexto, la intención y los matices del lenguaje humano, permitiéndole mantener conversaciones coherentes y naturales.
+
+Sin embargo, no dejamos que esta poderosa tecnología opere sin control. Nuestro trabajo consiste en:
+
+1.  **Enmarcar el Conocimiento:** Alimentamos a Irma exclusivamente con la información de tu negocio: catálogo de productos, políticas, preguntas frecuentes, etc.
+2.  **Establecer "Guardarraíles":** Creamos reglas y límites para que Irma se mantenga siempre enfocada (`on topic`). Esto evita que responda sobre temas no relacionados o que invente información.
+
+El resultado es una IA que combina el poder conversacional de Gemini con el conocimiento experto y la seguridad de un empleado perfectamente entrenado.

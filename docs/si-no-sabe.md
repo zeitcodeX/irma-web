@@ -1,0 +1,13 @@
+---
+title: '¿Qué pasa si Irma no sabe una respuesta?'
+---
+
+La primera regla de Irma es: **"Ante la duda, no inventar"**. La confianza de tus clientes es lo más importante.
+
+Si un usuario realiza una pregunta para la cual Irma no ha sido entrenada, o si la consulta es demasiado compleja, activará un protocolo de escalamiento que definimos con vos. El proceso estándar es:
+
+1.  Irma responde con un mensaje honesto y amigable, como por ejemplo: "Esa es una excelente pregunta. Para darte la información más precisa, voy a pasar tu consulta a un miembro de nuestro equipo humano que se pondrá en contacto contigo a la brevedad."
+2.  Automáticamente, se notifica a tu equipo sobre la consulta pendiente.
+3.  La conversación queda registrada para que puedas continuarla sin que el cliente tenga que repetir nada.
+
+Este proceso asegura que ninguna consulta quede sin resolver y mantiene siempre un alto nivel de profesionalismo.

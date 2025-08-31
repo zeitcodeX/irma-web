@@ -1,0 +1,24 @@
+---
+title: 'Diferencia con bots tradicionales'
+---
+
+Irma es una asistente comercial y de atención al cliente impulsada por Inteligencia Artificial, diseñada para conversar con tus clientes de una manera natural y humana. Su objetivo es resolver consultas, calificar leads y facilitar ventas sin que parezca que estás hablando con una máquina.
+
+### El problema de los bots tradicionales
+
+Probablemente ya te hayas topado con chatbots que te obligan a navegar por menús numéricos ("Presione 1 para ventas...") o que se rinden ante la primera pregunta que no entienden. Estos bots son rígidos, frustrantes y a menudo crean una barrera en lugar de una solución.
+
+### La solución: Una conversación real con Irma
+
+Irma rompe con ese molde. Gracias a que está basada en la tecnología de Gemini de Google, su enfoque es 100% conversacional.
+
+* **Entiende el Lenguaje Natural:** Tus clientes pueden escribir como lo harían con una persona. Irma entiende el contexto, las intenciones y las variaciones en la forma de preguntar.
+* **Está Enfocada en Tu Negocio:** A diferencia de una IA genérica, nosotros "enmarcamos" a Irma para que sea una experta exclusivamente en tu negocio. Solo hablará de tus productos, servicios y políticas, asegurando respuestas siempre relevantes y `on topic`.
+* **Resuelve y Vende:** El objetivo de Irma no es solo responder, sino avanzar en la conversación. Puede recomendar productos de tu catálogo, responder dudas sobre el stock y, lo más importante, identificar cuándo un cliente está listo para comprar y pasarlo a tu equipo de ventas.
+
+| Característica | Bots Tradicionales | Asistente IA Irma |
+| :--- | :--- | :--- |
+| **Interacción** | Menús rígidos y palabras clave | Conversación fluida y natural |
+| **Inteligencia** | Respuestas pre-programadas | Entiende el contexto (Gemini) |
+| **Conocimiento** | Limitado a un guion estricto | Experta entrenada en tu negocio |
+| **Objetivo** | Desviar consultas | Resolver, vender y calificar |
