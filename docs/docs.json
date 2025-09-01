@@ -22,7 +22,9 @@
             "pages": [
               "index",
               "tecnologia",
-              "para-quien-es"
+              "para-quien-es",
+              "nuestro-crm",
+              "integraciones"
             ]
           },
           {
@@ -44,7 +46,7 @@
           {
             "group": "Próximamente",
             "pages": [
-              "integraciones",
+              "reportes-y-analytics",
               "casos-de-exito"
             ]
           }
@@ -53,13 +55,17 @@
     ]
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Soporte",
-        "href": "mailto:soporte@holairma.com"
-      }
-    ]
-  },
+  "links": [
+    {
+      "label": "Volver a la Web Principal",
+      "href": "/"
+    },
+    {
+      "label": "Soporte",
+      "href": "mailto:contacto@holairma.com"
+    }
+  ]
+},
   "footer": {
     "socials": {}
   }
