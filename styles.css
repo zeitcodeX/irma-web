@@ -398,8 +398,8 @@ section {
   gap: 2rem;
 }
 
-.feature-card {
-  background: linear-gradient(180deg, #000000 0%, #0b808a 100%);
+/* --- MEJORA: Unificación de Feature Cards --- */
+.feature-card-base {
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -407,18 +407,21 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.feature-card-2 {
-  background: linear-gradient(180deg, #0b808a 0%, #000000 100%);
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.feature-card:hover {
+.feature-card-base:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(11, 128, 138, 0.3);
+}
+
+.feature-card-base h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.feature-card-base p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
 }
 
 .feature-icon {
@@ -428,74 +431,13 @@ section {
   display: block;
 }
 
-.feature-card h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 1rem;
+/* Clases específicas para el fondo */
+.bg-theme-1 {
+  background: linear-gradient(180deg, #000000 0%, #0b808a 100%);
 }
 
-.feature-card p {
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.7;
-}
-
-.feature-icon-2 {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.feature-card-2 h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 1rem;
-}
-
-.feature-card-2 p {
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.7;
-}
-
-/* Integrations Section */
-.integrations-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.integration-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  border: 1px solid #e2e8f0;
-  text-align: center;
-}
-
-.integration-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.integration-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.integration-card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1a202c;
-  margin-bottom: 1rem;
-}
-
-.integration-card p {
-  color: #4a5568;
-  line-height: 1.6;
+.bg-theme-2 {
+  background: linear-gradient(180deg, #0b808a 0%, #000000 100%);
 }
 
 /* Testimonials Section */
@@ -558,6 +500,7 @@ section {
   border: 1px solid #e2e8f0;
   position: relative;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .pricing-card:hover {
@@ -638,6 +581,8 @@ section {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none; /* Añadido para los <a> */
+  display: inline-block; /* Añadido para los <a> */
 }
 
 .pricing-button:hover {
@@ -672,6 +617,8 @@ section {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none; /* Añadido para los <a> */
+  display: inline-block; /* Añadido para los <a> */
 }
 
 .pricing-contact-button:hover {
@@ -741,7 +688,7 @@ section {
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
@@ -810,7 +757,6 @@ section {
   }
   
   .features-grid,
-  .integrations-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
@@ -853,4 +799,38 @@ section {
   section {
     padding: 3rem 0;
   }
+}
+
+/* =============================================== */
+/* === PERSONALIZACIÓN DEL BANNER DE COOKIES === */
+/* =============================================== */
+
+/* Fondo del banner con gradiente y texto blanco */
+.cc-window.cc-banner {
+  background: linear-gradient(135deg, #000000 0%, #0B808A 100%) !important;
+  color: #ffffff !important; /* NUEVO: Asegura que el texto principal sea blanco puro */
+}
+
+/* Fondo del botón con el color naranja y sin borde */
+.cc-btn.cc-dismiss {
+  background: #f47121 !important;
+  color: #ffffff !important;
+  border: none !important; /* NUEVO: Elimina cualquier borde por defecto */
+}
+
+/* Efecto hover para el botón (opcional pero recomendado) */
+.cc-btn.cc-dismiss:hover {
+    background: #d85e18 !important; /* Un naranja un poco más oscuro para el efecto */
+}
+
+/* Estilo específico para el enlace "Leer más" */
+.cc-window.cc-banner .cc-link {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.cc-window.cc-banner .cc-link:hover {
+  opacity: 1;
 }

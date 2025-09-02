@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script type="module" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <nav class="nav">
         <div class="nav-brand">
@@ -22,8 +25,9 @@
           <a href="#caracteristicas" class="nav-link">Características</a>
           <a href="#integraciones" class="nav-link">Integraciones</a>
           <a href="#precios" class="nav-link">Precios</a>
+          <a href="/docs" class="nav-link">Documentación</a>
           <div class="nav-buttons">
-            <a href="#contacto" class="nav-link cta-button">¡Comencemos!</a>
+            <a href="mailto:contacto@holairma.com" class="nav-link cta-button">¡Comencemos!</a>
             <div class="nav-auth">
               <span class="auth-text">¿Ya sos usuario?</span>
               <a href="#login" class="login-button">Iniciar sesión</a>
@@ -38,22 +42,20 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title">
-            Conocé a <span class="highlight">IRMA</span><br>
-           El asistente que potencia a tu equipo
+            Conocé a <span class="highlight">IRMA</span>,<br>
+           el chatbot IA que no parece un chatbot
           </h1>
           <p class="hero-description">
             IRMA es el chatbot más natural que vas a conocer. Tan conversacional que tus clientes 
             van a pensar que están hablando con una persona real. Se integra fácilmente con WhatsApp, 
-            Shopify, Tiendanube y sitios web.
+            Shopify, Tiendanube y sitios web. La mejor aliada para tu equipo de ventas y atención al cliente.
           </p>
           <div class="hero-buttons">
-            <button class="btn-primary">Hablá con IRMA</button>
-            <button class="btn-secondary">Ver Demo</button>
+            <a href="https://wa.me/5491171004451" class="btn-primary" target="_blank">Hablá con IRMA</a>
           </div>
           <div class="hero-stats">
             <div class="stat">
@@ -89,7 +91,7 @@
                 <p>Necesito información sobre sus productos.</p>
               </div>
               <div class="message irma-message">
-                <p>¡Genial! Te puedo mostrar nuestro catálogo completo. ¿Hay algún tipo de producto específico que te interese?</p>
+                <p>¡Genial! Te puedo mostrar nuestro catálogo completo. ¿Qué estás buscando?</p>
               </div>
               <div class="typing-indicator">
                 <span></span>
@@ -102,7 +104,6 @@
       </div>
     </section>
 
-    <!-- Features Section -->
     <section id="caracteristicas" class="features">
       <div class="container">
         <div class="section-header">
@@ -110,32 +111,32 @@
           <p>IRMA no es solo un chatbot, es un compañero de trabajo que potencia al equipo: Todas esas horas que se pierden contestando mensajes de falsos leads y preguntas frecuentes pasan a estar disponibles para que tu equipo se concentre en concretar leads reales y atender necesidades complejas de tus clientes.</p>
         </div>
         <div class="features-grid">
-          <div class="feature-card">
+          <div class="feature-card-base bg-theme-1">
             <img src="assets/images/Icono-inteligencia-natural.png" alt="Inteligencia Natural" class="feature-icon" />
             <h3>Inteligencia Natural</h3>
             <p>Conversaciones tan naturales que tus clientes no van a notar la diferencia. IRMA entiende el contexto y responde como una persona real, mejorando la experiencia con tu producto, fomentando la satisfacción del cliente y la fidelización.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card-base bg-theme-1">
             <img src="assets/images/Icono-respuestas-instantaneas.png" alt="Respuestas Instantáneas" class="feature-icon" />
             <h3>Respuestas Instantáneas</h3>
             <p>Sin tiempos de espera. IRMA responde al instante, 24 horas al día, 7 días a la semana. No te pierdas leads en caliente por no estar online, y no dejes que tus clientes se irriten esperando una respuesta de atención al cliente.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card-base bg-theme-1">
             <img src="assets/images/Icono-personalizacion-total.png" alt="Personalización Total" class="feature-icon" />
             <h3>Personalización Total</h3>
             <p>Adaptala a IRMA a tu marca, tut ono de voz y necesidades específicas. La forma de hablar, el nivel de formalidad, el uso de emojis, todo se puede customizar para mantener una imagen de marca coherente y auténtica.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card-base bg-theme-1">
             <img src="assets/images/Icono-aumenta-tus-ventas.png" alt="Aumenta tus Ventas" class="feature-icon" />
             <h3>Aumenta tus Ventas</h3>
             <p>IRMA no solo responde preguntas, también guía a tus clientes hacia la compra, aumentando tu tasa de conversión.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card-base bg-theme-1">
             <img src="assets/images/Icono-seguro-confiable.png" alt="Seguro y Confiable" class="feature-icon" />
             <h3>Seguro y Confiable</h3>
             <p>Protección de datos de nivel empresarial. Tus conversaciones y datos están seguros con encriptación de extremo a extremo.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card-base bg-theme-1">
             <img src="assets/images/Icono-dashboard-crm.png" alt="Dashboard y CRM" class="feature-icon" />
             <h3>Dashboard y CRM</h3>
             <p>Desde un dashboard vas a poder tener una visión global de todas las conversaciones, bien organizadas y detalladas. No hay conversación que pase de largo, siempre vas a estar al tanto de lo que hace IRMA.</p>
@@ -144,7 +145,6 @@
       </div>
     </section>
 
-    <!-- Integrations Section -->
     <section id="integraciones" class="features">
       <div class="container">
         <div class="section-header">
@@ -152,31 +152,30 @@
           <p>IRMA se conecta fácilmente con tus plataformas en minutos</p>
         </div>
         <div class="features-grid">
-            <div class="feature-card-2">
+            <div class="feature-card-base bg-theme-2">
             <img src="assets/images/Icono-whatsapp-business.png" alt="Whatsapp Business" class="feature-icon" />
             <h3>WhatsApp Business</h3>
             <p>Conectá IRMA directamente con WhatsApp Business y atiende a tus clientes donde ya están.</p>
           </div>
-           <div class="feature-card-2">
+           <div class="feature-card-base bg-theme-2">
             <img src="assets/images/Icono-Shopify.png" alt="Shopify" class="feature-icon" />
             <h3>Shopify</h3>
             <p>Integración nativa con Shopify. IRMA conoce tu inventario y puede procesar pedidos automáticamente.</p>
           </div>
-           <div class="feature-card-2">
+           <div class="feature-card-base bg-theme-2">
             <img src="assets/images/Icono-tiendanube.png" alt="Tiendanube" class="feature-icon" />
             <h3>Tiendanube</h3>
             <p>Perfecta compatibilidad con Tiendanube. Sincronización automática de productos y pedidos.</p>
           </div>
-           <div class="feature-card-2">
+           <div class="feature-card-base bg-theme-2">
             <img src="assets/images/Icono-sitios-personalizados.png" alt="Sitios Personalizados" class="feature-icon" />
             <h3>Sitios Personalizados</h3>
-            <p>¿Tenés un sitio web personalizado? IRMA se adapta a cualquier plataforma con nuestra API flexible.</p>
+            <p>¿Tenés un sitio web personalizado? IRMA se adapta a cualquier plataforma.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials">
       <div class="container">
         <div class="section-header">
@@ -191,7 +190,7 @@
             <div class="testimonial-author">
               <div class="author-info">
                 <h4>Catalina Santini</h4>
-                <span>CEO, Boxer Company</span>
+                <span>Fundadora, Boxer Company</span>
               </div>
             </div>
           </div>
@@ -221,12 +220,11 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
     <section id="precios" class="pricing">
       <div class="container">
         <div class="section-header">
           <h2>Planes que se adaptan a tu negocio</h2>
-          <p>Desde startups hasta grandes empresas, tenemos el plan perfecto para ti</p>
+          <p>Desde startups hasta grandes empresas, tenemos el plan perfecto para vos</p>
         </div>
         <div class="pricing-grid">
           <div class="pricing-card">
@@ -234,7 +232,7 @@
               <h3>Starter</h3>
               <div class="price">
                 <span class="currency">$</span>
-                <span class="amount">29</span>
+                <span class="amount">38.700</span>
                 <span class="period">/mes</span>
               </div>
             </div>
@@ -245,7 +243,7 @@
               <li>✅ Soporte por email</li>
               <li>✅ Analytics básicos</li>
             </ul>
-            <button class="pricing-button">Comenzar Gratis</button>
+            <a href="https://wa.me/5491171004451" class="pricing-button" target="_blank">Empezar</a>
           </div>
           <div class="pricing-card featured">
             <div class="pricing-badge">Más Popular</div>
@@ -253,65 +251,60 @@
               <h3>Professional</h3>
               <div class="price">
                 <span class="currency">$</span>
-                <span class="amount">79</span>
+                <span class="amount">106.600</span>
                 <span class="period">/mes</span>
               </div>
             </div>
             <ul class="pricing-features">
+              <li>Todo lo que incluye Starter más:</li>
               <li>✅ Hasta 5,000 conversaciones/mes</li>
-              <li>✅ Integraciones ilimitadas</li>
+              <li>✅ Integraciones a 3 canales de comunicación</li>
               <li>✅ Personalización avanzada</li>
-              <li>✅ Soporte prioritario</li>
-              <li>✅ Analytics avanzados</li>
-              <li>✅ API personalizada</li>
             </ul>
-            <button class="pricing-button">Comenzar Ahora</button>
+            <a href="https://wa.me/5491171004451" class="pricing-button" target="_blank">Empezar</a>
           </div>
           <div class="pricing-card">
             <div class="pricing-header">
               <h3>Enterprise</h3>
               <div class="price">
                 <span class="currency">$</span>
-                <span class="amount">199</span>
+                <span class="amount">266.800</span>
                 <span class="period">/mes</span>
               </div>
             </div>
             <ul class="pricing-features">
-              <li>✅ Conversaciones ilimitadas</li>
+              <li>Todo lo que incluye Professional más:</li>
+              <li>✅ Hasta 15,000</li>
+              <li>✅ Soporte prioritario</li>
               <li>✅ Integraciones personalizadas</li>
-              <li>✅ Marca blanca disponible</li>
-              <li>✅ Soporte 24/7 dedicado</li>
-              <li>✅ Reportes personalizados</li>
               <li>✅ Gerente de cuenta</li>
             </ul>
-            <button class="pricing-button">Contactar Ventas</button>
+            <a href="mailto:contacto@holairma.com" class="pricing-button">Contactar Ventas</a>
           </div>
         </div>
         <div class="pricing-footer">
           <p class="pricing-footer-text">
             ¿Necesitás más conversaciones o un paquete especializado? Contactanos por nuestro servicio corporativo
           </p>
-          <button class="pricing-contact-button">Contacto</button>
+          <a href="mailto:contacto@holairma.com" class="pricing-contact-button">Contacto</a>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="contacto" class="cta">
+    <section id="contacto-final" class="cta">
       <div class="container">
         <div class="cta-content">
           <h2>¿Querés conocer a tu nuevo compañero de equipo?</h2>
           <p>Es simple: un asistente que se ocupa de atender y filtrar mensajes, pensando en la mejor experiencia para tus clientes.</p>
           <div class="cta-buttons">
-            <button class="btn-primary large">Hablar con IRMA</button>
-            <button class="btn-secondary large">Agendar Demo Personalizada</button>
+            <a href="https://wa.me/5491171004451" class="btn-primary large" target="_blank">Hablar con IRMA</a>
+            <a href="mailto:contacto@holairma.com" class="btn-secondary large">Agendar Demo Personalizada</a>
           </div>
-          <p class="cta-note">Sin tarjeta de crédito • Configuración asistida • Soporte técnico personalizado</p>
+          <p class="cta-note">Sin compromisos • Configuración asistida • Sin obligación de compra</p>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -328,16 +321,21 @@
             </div>
             <div class="footer-column">
               <h4>Soporte</h4>
-              <a href="#">Centro de Ayuda</a>
-              <a href="#">Documentación</a>
-              <a href="#">Contacto</a>
+              <a href="https://wa.me/5491171004451" target="_blank">Centro de Ayuda</a>
+              <a href="/docs">Documentación</a>
+              <a href="mailto:contacto@holairma.com">Contacto</a>
             </div>
             <div class="footer-column">
               <h4>Empresa</h4>
               <a href="#">Acerca de</a>
               <a href="#">Blog</a>
-              <a href="#">Términos</a>
-              <a href="#">Privacidad</a>
+              <a href="terminos.html">Términos</a>
+              <a href="privacidad.html">Privacidad</a>
+            </div>
+            <div class="footer-column">
+              <h4>Seguinos</h4>
+              <a href="https://www.instagram.com/holairma" target="_blank">Instagram</a>
+              <a href="https://www.linkedin.com/company/holairma" target="_blank">LinkedIn</a>
             </div>
           </div>
         </div>
@@ -346,5 +344,17 @@
         </div>
       </div>
     </footer>
+    <script>
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "content": {
+      "message": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Al continuar navegando, aceptás nuestro uso de cookies.",
+      "dismiss": "Aceptar",
+      "link": "Leer más",
+      "href": "privacidad.html"
+    }
+  })
+});
+</script>
   </body>
 </html>
