@@ -1,0 +1,4 @@
+# Ignorar archivos de imagen y assets temporalmente
+favicon.png
+favicon.svg
+assets/images/
