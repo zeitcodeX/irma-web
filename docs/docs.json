@@ -55,17 +55,17 @@
     ]
   },
   "navbar": {
-  "links": [
-    {
-      "label": "Volver a la Web Principal",
-      "href": "/"
-    },
-    {
-      "label": "Soporte",
-      "href": "mailto:contacto@holairma.com"
-    }
-  ]
-},
+    "links": [
+      {
+        "label": "Volver a la Web Principal",
+        "href": "https://holairma.com"
+      },
+      {
+        "label": "Soporte",
+        "href": "mailto:contacto@holairma.com"
+      }
+    ]
+  },
   "footer": {
     "socials": {}
   }
