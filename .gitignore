@@ -1,2 +1,2 @@
-# Ignorar archivos de imagen y assets temporalmente
-assets/images/
+# .gitignore
+.DS_Store
