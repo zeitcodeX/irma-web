@@ -1,11 +1,15 @@
+---
 deployment:
   tasks:
-    # Copia los archivos de la web principal al servidor
-    - export DEPLOYPATH=/home/gyqjom32/public_html/
-    - /bin/cp index.html styles.css script.js privacidad.html terminos.html $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
+    # 1. Definir la ruta de destino final
+    - export DEPLOYPATH=/home/gyqjom32/public_html
 
-    # Construye y copia la documentación
+    # 2. Copiar los archivos de la web principal al destino
+    - /bin/cp -R index.html styles.css script.js terminos.html privacidad.html favicon.png assets docs "${DEPLOYPATH}/"
+
+    # 3. Construir la documentación (esto ocurre en una copia temporal del repo)
     - cd docs
     - npx mintlify build
-    - /bin/cp -R _site/. $DEPLOYPATH/docs/
+    
+    # 4. Copiar la documentación ya construida al destino final
+    - /bin/cp -R _site/. "${DEPLOYPATH}/docs/"
