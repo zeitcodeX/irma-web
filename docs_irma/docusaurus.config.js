@@ -100,8 +100,8 @@ const config = {
           {
             title: 'Empresa',
             items: [
-              { label: 'Términos', href: 'https://holairma.com/terminos' },
-              { label: 'Privacidad', href: 'https://holairma.com/privacidad' },
+              { label: 'Términos', href: 'https://holairma.com/terminos.html' },
+              { label: 'Privacidad', href: 'https://holairma.com/privacidad.html' },
             ],
           },
           {
