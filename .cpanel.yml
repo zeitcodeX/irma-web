@@ -1,8 +1,24 @@
 ---
 deployment:
   tasks:
-    # 1. Definir la ruta de destino final
+    # 1. Definir la ruta de destino final en el servidor
     - export DEPLOYPATH=/home/gyqjom32/public_html
 
-    # 2. Copiar los archivos de la web principal al destino
-    - /bin/cp -R index.html styles.css script.js terminos.html privacidad.html favicon.png assets FAQ "${DEPLOYPATH}/"
+    # 2. Copiar los archivos de la web principal (index.html, etc.) a la raíz del hosting
+    - echo "Copiando archivos del sitio principal..."
+    - /bin/cp -R index.html styles.css script.js terminos.html privacidad.html favicon.png assets "${DEPLOYPATH}/"
+
+    # --- INICIO: TAREAS PARA LA DOCUMENTACIÓN (RECURSOS) ---
+
+    # 3. Eliminar la carpeta de recursos anterior para asegurar un despliegue limpio
+    - echo "Eliminando el directorio de recursos anterior..."
+    - /bin/rm -rf "${DEPLOYPATH}/recursos/"
+
+    # 4. Crear la carpeta de recursos vacía nuevamente
+    - echo "Creando un nuevo directorio de recursos..."
+    - /bin/mkdir "${DEPLOYPATH}/recursos"
+
+    # 5. Copiar el contenido de la carpeta 'build' (que ya está en el repositorio) a la nueva carpeta de recursos
+    #    'docs_irma/build/.' asegura que copiamos el CONTENIDO de la carpeta build, no la carpeta en sí.
+    - echo "Copiando el sitio de documentación a la carpeta de recursos..."
+    - /bin/cp -R docs_irma/build/. "${DEPLOYPATH}/recursos/"
