@@ -1,17 +1,22 @@
-Dependencias de Node.js
+See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+dependencies
 
 /node_modules
-/package-lock.json
-Archivos de sistema operativo
+/.pnp
+.pnp.js
+misc
 
 .DS_Store
-Logs
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-Archivos generados por Docusaurus (dentro de la subcarpeta)
+Docusaurus generated files
+OJO: Se eliminó /.docusaurus y /build de esta lista para poder subirlos al repositorio
 
 /docs_irma/.docusaurus
 /docs_irma/build
-/docs_irma/coverage
