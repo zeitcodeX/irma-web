@@ -1,22 +1,20 @@
-See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-dependencies
+Archivos de dependencias y logs (ignorar siempre)
 
 /node_modules
-/.pnp
-.pnp.js
-misc
+/docs_irma/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+Archivos temporales y de caché de Docusaurus (ignorar siempre)
+
+/docs_irma/.docusaurus
+/docs_irma/.build # En caso de que se genere
+Archivos de entorno y sistema operativo (ignorar siempre)
 
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-Docusaurus generated files
-OJO: Se eliminó /.docusaurus y /build de esta lista para poder subirlos al repositorio
-
-/docs_irma/.docusaurus
-/docs_irma/build
+NOTA: La carpeta /docs_irma/build se omite intencionadamente de este archivo
+para que pueda ser incluida en el repositorio para el deploy simplificado.
