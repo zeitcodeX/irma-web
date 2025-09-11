@@ -1,0 +1,14 @@
+/* En src/components/Columns.module.css */
+.columns {
+  display: grid;
+  /* Usa la variable --cols, con un valor por defecto de 2 */
+  grid-template-columns: repeat(var(--cols, 2), 1fr);
+  gap: 1.5rem; /* Espacio entre las tarjetas */
+}
+
+/* En pantallas pequeñas, forzamos a una sola columna */
+@media (max-width: 768px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}

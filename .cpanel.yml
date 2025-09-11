@@ -6,10 +6,3 @@ deployment:
 
     # 2. Copiar los archivos de la web principal al destino
     - /bin/cp -R index.html styles.css script.js terminos.html privacidad.html favicon.png assets FAQ "${DEPLOYPATH}/"
-
-    # 3. Construir la documentación (esto ocurre en una copia temporal del repo)
-    - cd docs
-    - npx mintlify build
-    
-    # 4. Copiar la documentación ya construida al destino final
-    - /bin/cp -R _site/. "${DEPLOYPATH}/docs/"

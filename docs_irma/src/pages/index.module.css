@@ -1,0 +1,73 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+/* --- Contenedor para las cajas de anuncios --- */
+.announcementContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  gap: 2rem; /* Espacio entre las cajas */
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 4rem; /* <-- CAMBIO: Centrado horizontal y margen inferior */
+}
+
+.announcementBox {
+  padding: 2rem;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius);
+  text-align: left; /* Alinea el texto a la izquierda dentro de la caja */
+  height: 100%;
+}
+
+.announcementTitle {
+  color: var(--ifm-color-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* En pantallas pequeñas, las cajas se apilan una sobre otra */
+@media (max-width: 768px) {
+  .announcementContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Estilos para el Video (más pequeño) --- */
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 550px; /* Reducimos aún más el tamaño máximo */
+  padding-top: 56.25%; /* Mantiene la proporción 16:9 */
+  margin: 0 auto;
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.videoPlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* <-- CAMBIO: Corregido a 100% para llenar el contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* --- Estilos para el Botón --- */
+.buttons {
+  margin-top: 2.5rem; /* Espacio después del video */
+  text-align: center;
+}

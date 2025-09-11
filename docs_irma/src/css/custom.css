@@ -1,0 +1,42 @@
+/**
+ * Any CSS included here will be global.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #0B808A; /* Color primario para modo claro */
+  --ifm-color-primary-dark: #0a737c;
+  --ifm-color-primary-darker: #09666e;
+  --ifm-color-primary-darkest: #085960;
+  --ifm-color-primary-light: #0c8d98;
+  --ifm-color-primary-lighter: #0d9aab;
+  --ifm-color-primary-lightest: #0ea7bc;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #f47121; /* Color primario para modo oscuro */
+  --ifm-color-primary-dark: #f3630b;
+  --ifm-color-primary-darker: #e05c0a;
+  --ifm-color-primary-darkest: #c75209;
+  --ifm-color-primary-light: #f57f37;
+  --ifm-color-primary-lighter: #f68d4d;
+  --ifm-color-primary-lightest: #f79b63;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* --- AJUSTES DE TAMAÑO PARA LOGOS --- */
+
+/* Logo en la barra de navegación (Header) */
+.navbar__logo {
+  max-height: 32px; /* Ajusta este valor según lo necesites */
+}
+
+/* Logo en el pie de página (Footer) */
+.footer__logo {
+  max-width: 150px; /* Ajusta este valor según lo necesites */
+  margin-bottom: 1rem; /* Añade un poco de espacio debajo */
+}
+
