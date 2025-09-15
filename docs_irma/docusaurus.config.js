@@ -38,10 +38,9 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: 'documentacion',
-          editUrl:
-            'https://holairma.com',
+          // --- CAMBIO AQUÍ: La línea 'editUrl' fue eliminada por completo ---
         },
-        blog: false, // <-- CAMBIO: Desactivamos el blog
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -72,7 +71,6 @@ const config = {
             position: 'left',
             label: 'Documentación',
           },
-          // <-- CAMBIO: Eliminado el link al blog de la barra de navegación
           {
             href: 'https://holairma.com',
             label: 'IRMA Home',
@@ -87,7 +85,6 @@ const config = {
             title: 'Contenido',
             items: [
               { label: 'Documentación', to: '/documentacion' },
-              // <-- CAMBIO: Eliminado el link al blog del footer
             ],
           },
           {
