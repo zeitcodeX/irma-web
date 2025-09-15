@@ -541,14 +541,15 @@ section {
 /* --- ESTILOS CORREGIDOS Y MEJORADOS PARA EL PRECIO --- */
 .price {
   display: inline-flex;
-  align-items: center;   /* 👈 antes tenías flex-end */
+  align-items: center;   /* alinea número y bloque lateral */
   justify-content: center;
   gap: 0.35rem;
 }
 
 .price-main {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  gap: 0.15rem; /* acerca el símbolo $ al número */
 }
 
 .currency {
@@ -560,18 +561,19 @@ section {
   font-size: 3rem;
   font-weight: 700;
   color: #1a202c;
-  line-height: 1; /* Asegura que el número grande no tenga espacio extra */
+  line-height: 1;
 }
 
 .price-period {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   font-size: 0.9rem;
   color: #718096;
   line-height: 1.1;
-  margin: 0;   /* 👈 quitamos el “bajón” */
+  margin: 0;
 }
+
 /* Ya no necesitamos la regla .price-period span { display: block; } */
 
 
