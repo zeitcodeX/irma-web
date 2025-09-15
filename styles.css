@@ -495,7 +495,7 @@ section {
 .pricing-card {
   background: white;
   border-radius: 16px;
-  padding: 2rem 1.5rem; /* 🔹 menos padding lateral */
+  padding: 2rem 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border: 1px solid #e2e8f0;
   position: relative;
@@ -541,15 +541,14 @@ section {
 /* --- ESTILOS CORREGIDOS Y MEJORADOS PARA EL PRECIO --- */
 .price {
   display: inline-flex;
-  align-items: center;   /* alinea número y bloque lateral */
+  align-items: center;
   justify-content: center;
   gap: 0.35rem;
 }
 
 .price-main {
   display: flex;
-  align-items: center;
-  gap: 0.15rem; /* acerca el símbolo $ al número */
+  align-items: baseline;
 }
 
 .currency {
@@ -573,9 +572,6 @@ section {
   line-height: 1.1;
   margin: 0;
 }
-
-/* Ya no necesitamos la regla .price-period span { display: block; } */
-
 
 .pricing-features {
   list-style: none;
@@ -825,19 +821,19 @@ section {
 /* Fondo del banner con gradiente y texto blanco */
 .cc-window.cc-banner {
   background: linear-gradient(135deg, #000000 0%, #0B808A 100%) !important;
-  color: #ffffff !important; /* NUEVO: Asegura que el texto principal sea blanco puro */
+  color: #ffffff !important;
 }
 
 /* Fondo del botón con el color naranja y sin borde */
 .cc-btn.cc-dismiss {
   background: #f47121 !important;
   color: #ffffff !important;
-  border: none !important; /* NUEVO: Elimina cualquier borde por defecto */
+  border: none !important;
 }
 
 /* Efecto hover para el botón (opcional pero recomendado) */
 .cc-btn.cc-dismiss:hover {
-    background: #d85e18 !important; /* Un naranja un poco más oscuro para el efecto */
+    background: #d85e18 !important;
 }
 
 /* Estilo específico para el enlace "Leer más" */
