@@ -4,7 +4,7 @@
     <title>Términos y Condiciones - IRMA</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Términos y Condiciones de Uso del sitio web de IRMA." />
+    <meta name="description" content="Términos y Condiciones de Uso del sitio web y del servicio de IRMA." />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
-      .legal-content { 
-      padding-top: 140px;
-      margin-bottom: 5rem; /* <-- AGREGAMOS ESTA LÍNEA */
-    }
-    </style>
   </head>
   <body>
     <header class="header">
@@ -31,9 +25,9 @@
           <a href="/#caracteristicas" class="nav-link">Características</a>
           <a href="/#integraciones" class="nav-link">Integraciones</a>
           <a href="/#precios" class="nav-link">Precios</a>
-          <a href="/docs" class="nav-link">Documentación</a>
+          <a href="/recursos/" class="nav-link">Recursos</a>
           <div class="nav-buttons">
-            <a href="mailto:contacto@holairma.com" class="nav-link cta-button">¡Comencemos!</a>
+            <a href="mailto:contacto@holairma.com" class="nav-link cta-button" target="_blank">¡Comencemos!</a>
             <div class="nav-auth">
               <span class="auth-text">¿Ya sos usuario?</span>
               <a href="#login" class="login-button">Iniciar sesión</a>
@@ -48,38 +42,172 @@
       </nav>
     </header>
 
-    <main>
-      <section class="legal-content container">
-        <h1>Términos y Condiciones del Sitio Web</h1>
-        <p><strong>Última actualización:</strong> 1 de Septiembre de 2025</p>
-        <p>
-          Bienvenido a holairma.com. A continuación, se describen los Términos y Condiciones de Uso (en adelante "Términos") que rigen el uso de este sitio web (en adelante, el "Sitio"). El acceso y uso del Sitio implica la aceptación plena y sin reservas de todos los puntos descritos en estos Términos. Si no está de acuerdo con estos Términos, por favor, no utilice el Sitio.
-        </p>
-        <h2>1. Objeto del Sitio Web</h2>
-        <p>
-          El Sitio tiene como finalidad principal la exposición de información, características y funcionalidades del producto y servicio denominado "IRMA". La información contenida en el Sitio es de carácter informativo y no constituye una oferta contractual vinculante hasta que se establezca un acuerdo formal de servicio.
-        </p>
-        <h2>2. Propiedad Intelectual</h2>
-        <p>
-          Todo el contenido publicado en el Sitio, incluyendo, pero no limitándose a, textos, gráficos, logos, iconos, imágenes, y software (el "Contenido"), es propiedad de IRMA o de sus licenciantes y está protegido por las leyes de propiedad intelectual de Argentina y tratados internacionales. No se concede ningún derecho o licencia sobre el Contenido.
-        </p>
-        <h2>3. Uso Aceptable del Sitio</h2>
-        <p>
-          El usuario se compromete a utilizar el Sitio de manera responsable y con fines lícitos. Queda estrictamente prohibido utilizar el Sitio para cualquier actividad que viole leyes locales, nacionales o internacionales.
-        </p>
-        <h2>4. Exclusión de Responsabilidad</h2>
-        <p>
-          IRMA se esfuerza por mantener la información del Sitio actualizada y precisa, pero no garantiza que el contenido esté libre de errores. El uso de la información del Sitio es bajo el exclusivo riesgo del usuario. IRMA no será responsable por ningún daño que resulte del acceso o uso del Sitio.
-        </p>
-        <h2>5. Ley Aplicable y Jurisdicción</h2>
-        <p>
-          Estos Términos se regirán e interpretarán de acuerdo con las leyes de la República Argentina. Cualquier disputa será sometida a la jurisdicción de los tribunales ordinarios de la Ciudad Autónoma de Buenos Aires.
-        </p>
-        <h2>6. Contacto</h2>
-        <p>
-          Si tiene alguna pregunta sobre estos Términos y Condiciones, puede contactarnos a través del correo electrónico: contacto@holairma.com.
-        </p>
+    <main class="legal-page">
+      <section class="legal-hero">
+        <div class="container">
+          <h1>Términos y Condiciones</h1>
+          <p>Información legal importante sobre el uso de nuestro sitio web y servicios.</p>
+        </div>
       </section>
+
+      <div class="legal-content">
+        
+        <div class="legal-nav">
+          <h4>Índice de Contenidos</h4>
+          <ul>
+            <li><a href="#terminos-sitio">Términos y Condiciones del Sitio Web</a></li>
+            <li><a href="#terminos-servicio">Términos y Condiciones del Servicio</a></li>
+          </ul>
+        </div>
+
+        <div class="legal-document" id="terminos-sitio">
+          <div class="document-header">
+            <h2>Términos y Condiciones del Sitio Web</h2>
+            <p class="document-meta"><strong>Última actualización:</strong> 20 de Septiembre de 2025</p>
+            <div class="document-intro">
+              <p>Bienvenido a holairma.com (en adelante, el "Sitio"). Este Sitio es propiedad de Franco Daniel Bordoni (en adelante, "IRMA"). El acceso y uso del Sitio implica la aceptación plena y sin reservas de los siguientes Términos y Condiciones de Uso.</p>
+            </div>
+          </div>
+
+          <div class="legal-section">
+            <h3>1. Objeto del Sitio Web</h3>
+            <p>El Sitio tiene como finalidad principal la exposición de información, características y funcionalidades del producto y servicio de chatbot denominado "IRMA". La información contenida es de carácter informativo y publicitario, y <strong>no constituye una oferta contractual vinculante ni asesoramiento profesional de ningún tipo.</strong></p>
+            
+            <div class="legal-highlight">
+              <h4>Importante</h4>
+              <p>La contratación del servicio se regirá por los "Términos y Condiciones del Servicio" específicos, detallados en la segunda sección de esta página.</p>
+            </div>
+          </div>
+
+          <div class="legal-section">
+            <h3>2. Propiedad Intelectual e Industrial</h3>
+            <p>Todo el contenido publicado en el Sitio, incluyendo, sin limitarse a, textos, gráficos, logos, iconos, imágenes, clips de audio y video, el personaje/mascota de IRMA, y el software subyacente (el "Contenido"), es propiedad exclusiva de IRMA o de sus licenciantes y está protegido por las leyes de propiedad intelectual de la República Argentina y tratados internacionales.</p>
+            
+            <div class="legal-warning">
+              <h4>Prohibición Expresa</h4>
+              <p><strong>Queda estrictamente prohibida la reproducción, distribución, modificación o cualquier otro uso del Contenido no autorizado expresamente por escrito por IRMA.</strong></p>
+            </div>
+          </div>
+
+          <div class="legal-section">
+            <h3>3. Uso Aceptable del Sitio</h3>
+            <p>El usuario se compromete a utilizar el Sitio de manera responsable y con fines lícitos. Queda prohibido utilizar el Sitio para: (a) realizar actividades ilícitas; (b) infringir derechos de terceros; (c) introducir o difundir virus informáticos; (d) <strong>intentar acceder a áreas restringidas del Sitio o de sus servidores.</strong></p>
+          </div>
+
+          <div class="legal-section">
+            <h3>4. Exclusión de Responsabilidad</h3>
+            <p>IRMA se esfuerza por mantener la información del Sitio actualizada y precisa. Sin embargo, no garantiza la inexistencia de errores o la total exactitud del Contenido. <strong>El Contenido se proporciona "tal cual" y sin garantías de ningún tipo.</strong> IRMA no será responsable por ningún daño que resulte del acceso o uso del Sitio.</p>
+            <p><strong>El Sitio puede contener enlaces a sitios de terceros sobre los cuales IRMA no tiene control y por los cuales no asume responsabilidad alguna.</strong></p>
+          </div>
+
+          <div class="legal-section">
+            <h3>5. Modificaciones</h3>
+            <p><strong>IRMA se reserva el derecho de modificar, en cualquier momento y sin previo aviso, la presentación, configuración y contenido del Sitio, así como los presentes Términos y Condiciones.</strong></p>
+          </div>
+
+          <div class="legal-section">
+            <h3>6. Ley Aplicable y Jurisdicción</h3>
+            <p>Estos Términos se regirán e interpretarán de acuerdo con las leyes de la República Argentina. Cualquier disputa será sometida a la jurisdicción exclusiva de los tribunales ordinarios de la Ciudad Autónoma de Buenos Aires.</p>
+          </div>
+        </div>
+
+        <div class="legal-document" id="terminos-servicio">
+          <div class="document-header">
+            <h2>Términos y Condiciones del Servicio</h2>
+            <p class="document-meta"><strong>Última actualización:</strong> 20 de Septiembre de 2025</p>
+            <div class="document-intro">
+              <p>Estos Términos y Condiciones del Servicio ("Términos") constituyen un contrato legalmente vinculante entre usted (el "Cliente") y Franco Daniel Bordoni ("IRMA") que rige el uso de nuestro servicio de chatbot (el "Servicio"). Al contratar, acceder o utilizar el Servicio, usted acepta estar sujeto a estos Términos.</p>
+            </div>
+          </div>
+
+          <div class="legal-section">
+            <h3>1. Definiciones</h3>
+            <div class="definition-list">
+              <div class="definition-item">
+                <span class="definition-term">Servicio:</span>
+                <span class="definition-desc">Se refiere al chatbot IRMA, la plataforma, el software, las APIs, la documentación y el soporte técnico asociado.</span>
+              </div>
+              <div class="definition-item">
+                <span class="definition-term">Cliente:</span>
+                <span class="definition-desc">La persona física o jurídica que contrata el Servicio.</span>
+              </div>
+              <div class="definition-item">
+                <span class="definition-term">Usuario Final:</span>
+                <span class="definition-desc">El cliente o consumidor del Cliente que interactúa con el chatbot IRMA.</span>
+              </div>
+              <div class="definition-item">
+                <span class="definition-term">Plataformas de Terceros:</span>
+                <span class="definition-desc">Servicios como WhatsApp, Shopify, Tienda Nube, etc., en los que se integra el Servicio.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="legal-section">
+            <h3>2. Obligaciones del Cliente</h3>
+            <p>El Cliente se compromete a:</p>
+            <ul>
+              <li>Proporcionar información veraz y completa durante el proceso de registro y configuración.</li>
+              <li>Ser el único responsable de la información, productos, servicios y políticas comerciales que el chatbot comunica a los Usuarios Finales.</li>
+              <li>Utilizar el Servicio de conformidad con la ley y no para fines ilícitos o fraudulentos.</li>
+              <li>Mantener la confidencialidad de sus credenciales de acceso.</li>
+            </ul>
+          </div>
+
+          <div class="legal-section">
+            <h3>3. Limitación de Responsabilidad y Exclusión de Garantías</h3>
+            
+            <div class="legal-warning">
+              <h4>Cláusula Fundamental</h4>
+              <p>Esta cláusula es esencial para la protección de nuestro negocio. Su aceptación es una condición indispensable para el uso del Servicio.</p>
+            </div>
+
+            <h4>4.1. Servicio "TAL CUAL"</h4>
+            <p>El Cliente reconoce y acepta que el Servicio se proporciona <strong>"tal cual" y "según disponibilidad"</strong>. IRMA no ofrece ninguna garantía, expresa o implícita, de que el Servicio será ininterrumpido, seguro, libre de errores o que cumplirá con los requisitos específicos del Cliente.</p>
+
+            <h4>4.2. Exactitud de la Información</h4>
+            <p>El Servicio utiliza modelos de inteligencia artificial avanzados. Sin embargo, IRMA <strong>no garantiza la exactitud, veracidad o integridad de las respuestas o información proporcionada por el chatbot a los Usuarios Finales.</strong></p>
+            
+            <div class="legal-highlight">
+              <h4>Responsabilidad del Cliente</h4>
+              <p>El Cliente es el único responsable de supervisar las interacciones y de las consecuencias derivadas de información incorrecta, incompleta o errónea que el chatbot pueda generar. IRMA queda eximido de cualquier responsabilidad por pérdidas de ventas, quejas de clientes o daños a la reputación del Cliente.</p>
+            </div>
+
+            <h4>4.3. Interrupciones y Caídas del Servidor</h4>
+            <p>El acceso al Servicio puede ser interrumpido ocasionalmente por mantenimiento, actualizaciones o fallos de red. IRMA <strong>no será responsable de ninguna pérdida, perjuicio o lucro cesante que el Cliente pueda sufrir como resultado de la indisponibilidad, suspensión o interrupción del Servicio</strong>, independientemente de su duración.</p>
+
+            <h4>4.4. Fuerza Mayor</h4>
+            <p>IRMA no será responsable por incumplimientos o demoras debidas a causas fuera de su control razonable, incluyendo, pero no limitado a, actos de guerra, desastres naturales, pandemias, fallos masivos de internet o acciones de gobierno ("Causa de Fuerza Mayor").</p>
+
+            <h4>4.5. Limitación Cuantitativa de la Responsabilidad</h4>
+            <div class="legal-warning">
+              <h4>Límite Máximo de Responsabilidad</h4>
+              <p>En el caso de que un tribunal competente determine que IRMA es responsable, la responsabilidad total y acumulada de IRMA <strong>se limitará al monto total pagado por el Cliente a IRMA por el Servicio durante los tres (3) meses inmediatamente anteriores al evento que dio lugar al reclamo.</strong> En ningún caso IRMA será responsable por daños indirectos, especiales, incidentales, punitivos o consecuentes.</p>
+            </div>
+          </div>
+
+          <div class="legal-section">
+            <h3>5. Soporte Técnico</h3>
+            <p>IRMA proporcionará soporte técnico en los términos definidos en el plan contratado por el Cliente. El soporte se limita a resolver problemas directamente relacionados con la plataforma de IRMA y no se extiende a problemas derivados de las Plataformas de Terceros.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3>6. Vigencia y Terminación</h3>
+            <p>El Servicio se contrata por el período especificado en el plan (ej. mensual, anual). Cualquiera de las partes puede dar por terminado el servicio notificando a la otra parte. En caso de terminación, el Cliente será responsable de los pagos pendientes hasta la fecha de finalización efectiva.</p>
+          </div>
+
+          <div class="legal-section">
+            <h3>7. Ley Aplicable y Jurisdicción</h3>
+            <p>Estos Términos se regirán por las leyes de la República Argentina. Cualquier disputa será sometida a la jurisdicción de los tribunales ordinarios de la Ciudad Autónoma de Buenos Aires.</p>
+          </div>
+        </div>
+
+        <div class="legal-contact">
+          <h3>¿Tenés Preguntas?</h3>
+          <p>Si tenés alguna duda sobre estos términos y condiciones, no dudes en ponerte en contacto con nuestro equipo.</p>
+          <p>Email: <a href="mailto:contacto@holairma.com">contacto@holairma.com</a></p>
+        </div>
+
+      </div>
     </main>
 
     <footer class="footer">
@@ -99,13 +227,13 @@
             <div class="footer-column">
               <h4>Soporte</h4>
               <a href="https://wa.me/5491171004451" target="_blank">Centro de Ayuda</a>
-              <a href="/docs">Documentación</a>
-              <a href="mailto:contacto@holairma.com">Contacto</a>
+              <a href="/recursos/">Recursos</a>
+              <a href="mailto:contacto@holairma.com" target="_blank">Contacto</a>
             </div>
             <div class="footer-column">
               <h4>Empresa</h4>
-              <a href="#">Acerca de</a>
-              <a href="#">Blog</a>
+              <a href="#">Acerca de (próximamente)</a>
+              <a href="#">Blog (próximamente)</a>
               <a href="terminos.html">Términos</a>
               <a href="privacidad.html">Privacidad</a>
             </div>
@@ -121,6 +249,7 @@
         </div>
       </div>
     </footer>
+    
     <script>
       window.addEventListener("load", function(){
         window.cookieconsent.initialise({
