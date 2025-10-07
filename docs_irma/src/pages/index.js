@@ -10,7 +10,9 @@ function HomepageContent() {
         {/* -- Contenedor para las dos cajas de anuncios -- */}
         <div className={styles.announcementContainer}>
           <div className={styles.announcementBox}>
-            <h2 className={styles.announcementTitle}>Documentación</h2>
+            <h2 className={styles.announcementTitle}>
+  <Link to="/documentacion">Documentación</Link>
+</h2>
             <p>
               Encontrá toda la información útil, guías y preguntas frecuentes para sacar el máximo provecho de tu asistente IA.
             </p>
@@ -25,11 +27,14 @@ function HomepageContent() {
 
         {/* -- VIDEO DEMO -- */}
         <div className={styles.videoContainer}>
-          <div className={styles.videoPlaceholder}>
-            <span>Video Demo: Próximamente</span>
-          </div>
+          <iframe
+  src="https://www.youtube.com/embed/z2t7QnjqiCQ?rel=0&showinfo=0"
+  allowfullscreen
+></iframe>
+
         </div>
 
+       
         {/* -- BOTÓN -- */}
         <div className={styles.buttons}>
           <Link
