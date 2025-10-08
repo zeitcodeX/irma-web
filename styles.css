@@ -256,7 +256,7 @@ body {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Aumentado de 500px a 600px */
+  max-width: 1000px; /* Aumentado de 500px a 600px */
   aspect-ratio: 16/9;
   border-radius: 20px;
   overflow: hidden;
@@ -556,17 +556,17 @@ section {
 /* Centrar horizontalmente toda la grilla de precios */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 1200px;
   align-items: stretch;
-  justify-content: center; /* Centra toda la grilla horizontalmente */
-  margin: 0 auto; /* Centra el contenedor de la grilla */
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .pricing .container {
   display: flex;
+  max-width: 1400px;
   flex-direction: column;
   align-items: center;
 }
@@ -588,8 +588,8 @@ section {
 
 /* Centrado específico para la tarjeta Corporate (última tarjeta) */
 .pricing-card:last-child {
-  justify-content: flex-start; /* Cambiar para alinear el título arriba */
-  align-items: center; /* Centra horizontalmente el contenido interno */
+   justify-content: center; /* Cambiar para alinear el título arriba */
+ /* Centra horizontalmente el contenido interno */
 }
 
 /* Asegurar que el contenido de Corporate esté organizado correctamente */
@@ -607,7 +607,7 @@ section {
 
 .pricing-card:last-child .pricing-header p {
   margin-bottom: 0; /* Quitar margen del párrafo */
-  flex-grow: 1; /* Permitir que el párrafo ocupe el espacio disponible */
+  flex-grow: 0; /* Permitir que el párrafo ocupe el espacio disponible */
   display: flex;
   align-items: center; /* Centrar verticalmente solo el párrafo */
   text-align: center;
@@ -1408,5 +1408,58 @@ section {
   
   .legal-contact {
     padding: 2rem 1rem;
+  }
+}
+
+/* =============================================== */
+/* === ESTILOS PARA PROMO DE DOCUMENTACIÓN === */
+/* =============================================== */
+
+.docs-promo {
+  background-color: #f7fafc; /* Un fondo sutil para diferenciarla */
+  padding: 4rem 0;
+}
+
+.docs-promo-content {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Icono | Texto | Botón */
+  gap: 2rem;
+  align-items: center;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.docs-promo-icon svg {
+  width: 60px;
+  height: 60px;
+  color: #0B808A; /* Color principal de la marca */
+}
+
+.docs-promo-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.docs-promo-text p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+/* Ajustes responsivos para esta sección específica */
+@media (max-width: 992px) {
+  .docs-promo-content {
+    grid-template-columns: 1fr; /* Apilamos los elementos */
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .docs-promo-icon {
+    margin: 0 auto; /* Centramos el ícono */
   }
 }

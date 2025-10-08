@@ -9,7 +9,7 @@ const sidebars = {
     // === CATEGORÍAS CON LOS NOMBRES DE ARCHIVO CORRECTOS ===
     {
       type: 'category',
-      label: 'Sobre Irma y su Tecnología', // El título que se ve en el menú
+      label: 'Sobre IRMA y su Tecnología', // El título que se ve en el menú
       collapsible: true, // Permite que se pueda abrir y cerrar
       collapsed: false, // Hace que aparezca ABIERTA por defecto
       items: [
@@ -17,7 +17,8 @@ const sidebars = {
         'tecnologia', 
         'diferencia-con-bots-tradicionales',
         'para-quien-es', 
-        'integraciones', 
+        'integraciones',
+        'como-se-cuentan-los-mensajes', 
       ],
     },
     {

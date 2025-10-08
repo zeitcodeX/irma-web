@@ -90,7 +90,7 @@ const config = {
           {
             title: 'Soporte',
             items: [
-              { label: 'Centro de Ayuda', href: 'https://wa.me/5491171004451' },
+              { label: 'Centro de Ayuda', href: 'https://wa.me/5491162633589' },
               { label: 'Contacto', href: 'mailto:contacto@holairma.com' },
             ],
           },
