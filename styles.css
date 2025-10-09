@@ -956,6 +956,34 @@ section {
   section {
     padding: 3rem 0;
   }
+
+  /* === SOLUCIÓN PARA MENÚ RESPONSIVE === */
+
+/* Estilos para mostrar el menú desplegable cuando tiene la clase 'active' */
+.nav-links.active {
+  display: flex;
+  flex-direction: column; /* Apila los enlaces verticalmente */
+  position: absolute;
+  top: 100%; /* Se posiciona justo debajo del header */
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem; /* Espacio entre los enlaces */
+}
+
+/* Opcional: Animar el botón de 3 líneas para que se transforme en una 'X' */
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
 }
 
 /* =============================================== */
