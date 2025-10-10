@@ -44,6 +44,10 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+                gtag: {
+          trackingID: 'G-REKZRC005J', // TU ID DE GOOGLE ANALYTICS
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -116,6 +120,7 @@ const config = {
         },
         copyright: `Copyright © ${new Date().getFullYear()} IRMA. Todos los derechos reservados. Built with Docusaurus.`,
       },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
