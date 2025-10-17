@@ -1491,3 +1491,79 @@ section {
     margin: 0 auto; /* Centramos el ícono */
   }
 }
+
+/* =============================================== */
+/* === ESTILOS PARA PÁGINA 404 === */
+/* =============================================== */
+
+.error-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); /* Fondo sutil como el del hero */
+}
+
+.error-content {
+  max-width: 600px;
+}
+
+.error-irma-character {
+  max-width: 150px; /* Un tamaño amigable, no demasiado grande */
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.error-code {
+  font-size: 8rem; /* Número 404 bien grande */
+  font-weight: 700;
+  line-height: 1;
+  color: #e2e8f0; /* Un color de fondo sutil que no compita */
+}
+
+.error-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-top: 0rem; /* Ajustado para moverlo más abajo */
+  margin-bottom: 1rem;
+  line-height: 1.2; /* Ajustado para achicar el interlineado */
+}
+
+.error-description {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+}
+
+.error-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Para que los botones se apilen en pantallas pequeñas */
+}
+
+/* =============================================== */
+/* === ESTILOS PARA SELLO DE VERIFICACIÓN META === */
+/* =============================================== */
+
+.verification-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem; /* Espacio para separarlo del párrafo */
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.verification-icon {
+  width: 1.2em;
+  height: 1.2em;
+  color: #4ade80; /* Un verde vibrante que indica verificación */
+}
