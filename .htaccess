@@ -1,1 +1,5 @@
 ErrorDocument 404 /404.html
+Redirect 301 /docs /recursos/documentacion
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.holairma\.com [NC]
+RewriteRule ^(.*)$ https://holairma.com/$1 [L,R=301]
