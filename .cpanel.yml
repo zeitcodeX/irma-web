@@ -6,7 +6,8 @@ deployment:
 
     # 2. Copiar los archivos de la web principal (index.html, etc.) a la raíz del hosting
     - echo "Copiando archivos del sitio principal..."
-    - /bin/cp -R index.html styles.css script.js terminos.html privacidad.html favicon.png assets "${DEPLOYPATH}/"
+    # --- LÍNEA CORREGIDA: AÑADIMOS .htaccess, 404.html y sitemap.xml ---
+    - /bin/cp -R index.html styles.css script.js terminos.html privacidad.html favicon.png .htaccess 404.html sitemap.xml assets "${DEPLOYPATH}/"
 
     # --- INICIO: TAREAS PARA LA DOCUMENTACIÓN (RECURSOS) ---
 
