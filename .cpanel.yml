@@ -4,12 +4,18 @@ deployment:
     # 1. Definir la ruta de destino final en el servidor
     - export DEPLOYPATH=/home/gyqjom32/public_html
 
-    # 2. Copiar los archivos de la web principal (index.html, etc.) a la raíz del hosting
-    - echo "Copiando archivos del sitio principal..."
-    # --- LÍNEA CORREGIDA: AÑADIMOS .htaccess, 404.html y sitemap.xml ---
-    - /bin/cp -R index.html styles.css script.js terminos.html privacidad.html favicon.png .htaccess 404.html sitemap.xml assets "${DEPLOYPATH}/"
+    # 2. Sincronizar la carpeta raíz (¡usando rsync!)
+    - echo "Sincronizando archivos del sitio principal..."
+    - rsync -avz --delete \
+        --exclude='.git' \
+        --exclude='.github' \
+        --exclude='.cpanel.yml' \
+        --exclude='README.md' \
+        --exclude='docs_irma/' \
+        ./ "${DEPLOYPATH}/"
 
     # --- INICIO: TAREAS PARA LA DOCUMENTACIÓN (RECURSOS) ---
+    # (El resto de tus tareas sigue exactamente igual)
 
     # 3. Eliminar la carpeta de recursos anterior para asegurar un despliegue limpio
     - echo "Eliminando el directorio de recursos anterior..."
@@ -19,7 +25,6 @@ deployment:
     - echo "Creando un nuevo directorio de recursos..."
     - /bin/mkdir "${DEPLOYPATH}/recursos"
 
-    # 5. Copiar el contenido de la carpeta 'build' (que ya está en el repositorio) a la nueva carpeta de recursos
-    #    'docs_irma/build/.' asegura que copiamos el CONTENIDO de la carpeta build, no la carpeta en sí.
+    # 5. Copiar el contenido de la carpeta 'build' a la nueva carpeta de recursos
     - echo "Copiando el sitio de documentación a la carpeta de recursos..."
     - /bin/cp -R docs_irma/build/. "${DEPLOYPATH}/recursos/"
