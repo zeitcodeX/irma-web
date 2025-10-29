@@ -4,26 +4,35 @@ deployment:
     # 1. Definir la ruta de destino final en el servidor
     - export DEPLOYPATH=/home/gyqjom32/public_html
 
-# 2. Sincronizar la carpeta raíz (¡usando rsync con ruta completa!)
-    - echo "Sincronizando archivos del sitio principal..."
-    - rsync -avz --delete \
-        --exclude='.git' \
-        --exclude='.github' \
-        --exclude='.cpanel.yml' \
-        --exclude='README.md' \
-        --exclude='docs_irma/' \
-        /home/gyqjom32/repositories/irma-web/ "${DEPLOYPATH}/"
-    # --- INICIO: TAREAS PARA LA DOCUMENTACIÓN (RECURSOS) ---
-    # (El resto de tus tareas sigue exactamente igual)
+    # 2. Copiar los archivos de la web principal (¡con los archivos de la landing!)
+    - echo "Copiando archivos del sitio principal..."
+    - /bin/cp -R \
+        index.html \
+        styles.css \
+        script.js \
+        terminos.html \
+        privacidad.html \
+        favicon.png \
+        .htaccess \
+        404.html \
+        sitemap.xml \
+        assets \
+        landing-meta.html \
+        gracias.html \
+        enviar-formulario.php \
+        landing-styles.css \
+        "${DEPLOYPATH}/"
 
-    # 3. Eliminar la carpeta de recursos anterior para asegurar un despliegue limpio
+    # --- INICIO: TAREAS PARA LA DOCUMENTACIÓN (RECURSOS) ---
+
+    # 3. Eliminar la carpeta de recursos anterior
     - echo "Eliminando el directorio de recursos anterior..."
     - /bin/rm -rf "${DEPLOYPATH}/recursos/"
 
-    # 4. Crear la carpeta de recursos vacía nuevamente
+    # 4. Crear la carpeta de recursos vacía
     - echo "Creando un nuevo directorio de recursos..."
     - /bin/mkdir "${DEPLOYPATH}/recursos"
 
-    # 5. Copiar el contenido de la carpeta 'build' a la nueva carpeta de recursos
+    # 5. Copiar el contenido de la carpeta 'build'
     - echo "Copiando el sitio de documentación a la carpeta de recursos..."
     - /bin/cp -R docs_irma/build/. "${DEPLOYPATH}/recursos/"
