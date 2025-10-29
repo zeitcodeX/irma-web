@@ -4,7 +4,7 @@ deployment:
     # 1. Definir la ruta de destino final en el servidor
     - export DEPLOYPATH=/home/gyqjom32/public_html
 
-    # 2. Sincronizar la carpeta raíz (¡usando rsync!)
+# 2. Sincronizar la carpeta raíz (¡usando rsync con ruta completa!)
     - echo "Sincronizando archivos del sitio principal..."
     - rsync -avz --delete \
         --exclude='.git' \
@@ -12,8 +12,7 @@ deployment:
         --exclude='.cpanel.yml' \
         --exclude='README.md' \
         --exclude='docs_irma/' \
-        ./ "${DEPLOYPATH}/"
-
+        /home/gyqjom32/repositories/irma-web/ "${DEPLOYPATH}/"
     # --- INICIO: TAREAS PARA LA DOCUMENTACIÓN (RECURSOS) ---
     # (El resto de tus tareas sigue exactamente igual)
 
