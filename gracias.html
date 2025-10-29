@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Gracias por Registrarte! | IRMA</title>
+    
+    <meta name="robots" content="noindex, nofollow"> 
+
+    <link rel="stylesheet" href="landing-styles.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="landing-header">
+        <div class="landing-container">
+            <a href="https://holairma.com/" title="Ir a la página principal de IRMA">
+                <img src="assets/images/logo irma negro.png" alt="IRMA Logo" class="landing-logo" />
+            </a>
+        </div>
+    </header>
+
+    <main class="landing-main">
+        <div class="landing-container">
+            <div class="landing-content" style="text-align: center;">
+
+                <h1 class="landing-headline" id="gracias-titulo">¡Gracias por registrarte!</h1>
+                
+                <p class="landing-subheadline">
+                    Hemos recibido tus datos correctamente. Un asesor de nuestro equipo se pondrá en contacto con vos a la brevedad para activar tu prueba.
+                </p>
+
+                <hr style="border:0; border-top: 1px solid #e9ecef; margin: 2.5rem 0;">
+
+                <h2 style="font-weight: 600; font-size: 1.5rem; color: #212529; margin-bottom: 1rem;">
+                    ¿Te quedaste con ganas de hablar con IRMA?
+                </h2>
+                <p style="font-size: 1.1rem; color: #495057; margin-bottom: 2rem;">
+                    ¡Escribile ahora y conocela!
+                </p>
+
+                <a href="https://wa.me/5491162633589" class="cta-button primary" target="_blank" style="width: auto; padding: 0.9rem 2.5rem;">
+                    ¡Hablar con IRMA ahora!
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="landing-footer">
+        <div class="landing-container">
+            <p>&copy; 2025 IRMA. Todos los derechos reservados.</p>
+            <p><a href="/privacidad.html" target="_blank">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            try {
+                // 1. Busca los parámetros en la URL (ej: gracias.html?nombre=Juan)
+                const urlParams = new URLSearchParams(window.location.search);
+                const nombre = urlParams.get('nombre');
+
+                // 2. Busca el elemento H1 que queremos cambiar
+                const titulo = document.getElementById('gracias-titulo');
+
+                // 3. Si existe un nombre, lo capitaliza y lo inserta
+                if (nombre) {
+                    // Capitaliza solo la primera letra del nombre
+                    const nombreCapitalizado = nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase();
+                    titulo.textContent = '¡Gracias, ' + nombreCapitalizado + '!';
+                }
+                // Si no hay nombre, se queda el texto por defecto ("¡Gracias por registrarte!")
+            } catch (e) {
+                console.error('Error al personalizar el saludo:', e);
+            }
+        });
+    </script>
+</body>
+</html>
